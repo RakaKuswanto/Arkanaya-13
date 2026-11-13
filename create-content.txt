@@ -1,0 +1,3 @@
+@prompts/MASTER_EPISODE_PRODUCTION_PROMPT.md
+TOPIC: <nama kasus / peristiwa>
+OPTIONAL ANGLE: <fokus investigasi>

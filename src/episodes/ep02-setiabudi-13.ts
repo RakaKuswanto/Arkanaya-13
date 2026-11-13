@@ -1,0 +1,217 @@
+import { type EpisodeData, sec, validateEpisode } from "../schema/episode";
+
+export const ep02Setiabudi13Episode: EpisodeData = validateEpisode({
+  id: "ep02-setiabudi-13",
+  episodeNumber: "EPISODE 02",
+  caseNumber: "A13-1981-013",
+  title: "MISTERI KARDUS SETIABUDI 13",
+  subtitle: "Kasus mutilasi pertama yang tercatat publik di Indonesia.",
+  category: "COLD CASE",
+  location: "Jakarta Selatan, Indonesia",
+  date: "1981-11-23",
+  status: "UNSOLVED",
+  fps: 30,
+  scenes: [
+    {
+      id: "opening",
+      type: "opening",
+      duration: sec(6),
+      headline: "MISTERI KARDUS SETIABUDI 13",
+      highlightWords: ["SETIABUDI", "13"],
+      subtitle:
+        "Dua kotak kardus di trotoar Jalan Jenderal Sudirman. Satu kasus dingin yang tak pernah terjawab.",
+      transition: "paperCut",
+      sfx: { category: "low_cinematic_impact", offsetFrame: 8, volume: 0.6 },
+    },
+    {
+      id: "discovery",
+      type: "background",
+      duration: sec(8),
+      chapterNumber: "01",
+      headline: "THE DISCOVERY",
+      subtitle: "23 November 1981 · Pertigaan Setiabudi, Jakarta Selatan",
+      galleryMode: "polaroidStack",
+      galleryItems: [
+        {
+          caption: "Trotoar Jl. Jenderal Sudirman",
+          date: "23 NOV 1981",
+          rotation: -3.5,
+        },
+        {
+          caption: "Dua Kotak Kardus di Dekat JPO",
+          date: "23 NOV 1981",
+          rotation: 2.5,
+        },
+      ],
+      body: "Pagi itu, dua petugas keamanan mencium bau menyengat dari dua kotak kardus yang tergeletak di trotoar.",
+      srtText:
+        "1\n00:00:00,300 --> 00:00:03,800\nPagi 23 November 1981, dua kotak kardus ditemukan di trotoar Setiabudi.\n\n2\n00:00:03,900 --> 00:00:07,500\nIsinya mengejutkan warga dan memicu salah satu investigasi terbesar di Jakarta.",
+      transition: "verticalWipe",
+      sfx: { category: "camera_shutter", offsetFrame: 12, volume: 0.5 },
+    },
+    {
+      id: "timeline",
+      type: "timeline",
+      duration: sec(9),
+      chapterNumber: "02",
+      headline: "THE INCIDENT",
+      events: [
+        {
+          date: "23 NOV 1981 · PAGI",
+          title: "PENEMUAN DI SETIABUDI",
+          description:
+            "Satpam mencium bau menyengat dari dua kardus; seorang pemulung lalu membuka isinya.",
+        },
+        {
+          date: "23 NOV 1981 · SIANG",
+          title: "EVAKUASI KE RSCM",
+          description:
+            "Kepolisian mengamankan lokasi dan membawa temuan ke RSCM Jakarta untuk autopsi.",
+          highlight: true,
+        },
+        {
+          date: "27 NOV 1981",
+          title: "DIMAKAMKAN TANPA NAMA",
+          description:
+            "Karena tak ada pihak yang mengenali, korban dimakamkan sebagai Mr. X di TPU Tegal Alur.",
+        },
+      ],
+      srtText:
+        "1\n00:00:00,300 --> 00:00:04,300\nDari lokasi penemuan, seluruh temuan langsung dibawa ke RSCM untuk diautopsi.\n\n2\n00:00:04,400 --> 00:00:08,500\nEmpat hari berselang, korban dimakamkan tanpa identitas di TPU Tegal Alur.",
+      transition: "paperCut",
+      sfx: { category: "paper_movement", offsetFrame: 6, volume: 0.45 },
+    },
+    {
+      id: "location",
+      type: "location",
+      duration: sec(8),
+      chapterNumber: "03",
+      headline: "CRIME SECTOR",
+      routeMode: "vehicle",
+      waypoints: [
+        {
+          id: "setiabudi",
+          city: "SETIABUDI, JAKSEL",
+          coordinates: { lat: -6.2088, lng: 106.8216 },
+          xPercent: 32,
+          yPercent: 68,
+        },
+        {
+          id: "rscm",
+          city: "RSCM, JAKPUS",
+          coordinates: { lat: -6.1972, lng: 106.8469 },
+          xPercent: 64,
+          yPercent: 48,
+          align: "right",
+        },
+        {
+          id: "tegal-alur",
+          city: "TPU TEGAL ALUR, JAKBAR",
+          coordinates: { lat: -6.1189, lng: 106.7178 },
+          xPercent: 24,
+          yPercent: 22,
+        },
+      ],
+      stat: {
+        value: 13,
+        label: "BAGIAN TULANG UTAMA",
+        description:
+          "Kardus pertama berisi kepala dan 13 bagian tulang utama, yang kemudian menjadi asal nama kasus ini.",
+        source: "ARSIP FORENSIK RSCM // 1981",
+      },
+      transition: "verticalWipe",
+    },
+    {
+      id: "victim-dossier",
+      type: "dossier",
+      duration: sec(8),
+      chapterNumber: "04",
+      headline: "VICTIM DOSSIER",
+      docNumber: "SB13-MRX-1981",
+      subtitle: "MR. X (KORBAN SETIABUDI 13)",
+      speaker: "TIDAK PERNAH TERIDENTIFIKASI",
+      stamp: "UNIDENTIFIED",
+      dossierAttributes: [
+        { label: "Jenis Kelamin", value: "Laki-laki" },
+        { label: "Tinggi Badan", value: "± 165 cm" },
+        { label: "Kondisi Wajah", value: "Utuh / Dapat Dikenali" },
+        { label: "Sidik Jari", value: "Tersedia (Non-Digital)" },
+      ],
+      body: "Perkiraan usia berada di rentang 18–21 tahun (beberapa sumber mencatat 25–30 tahun). Tidak ada laporan orang hilang yang cocok.",
+      transition: "paperCut",
+    },
+    {
+      id: "forensic-note",
+      type: "quote",
+      duration: sec(8),
+      chapterNumber: "05",
+      headline: "FORENSIC ANALYSIS",
+      body: "Hasil autopsi menunjukkan pemisahan jaringan dilakukan secara terstruktur oleh pihak yang memahami anatomi, diperkirakan memakan waktu 3 hingga 4 jam.",
+      highlightPhrase: "memahami anatomi",
+      speaker: "RINGKASAN TEMUAN DR. ABDUL MUN'IM IDRIES",
+      source: "ARSIP AUTOPSI RSCM // 1981",
+      transition: "verticalWipe",
+    },
+    {
+      id: "evidence",
+      type: "evidence",
+      duration: sec(7),
+      chapterNumber: "06",
+      headline: "THE EVIDENCE",
+      cards: [
+        {
+          id: "ev-box",
+          evidenceNumber: "EV-001",
+          title: "DUA KOTAK KARDUS",
+          description:
+            "Diletakkan di trotoar padat Jalan Sudirman tanpa jejak saksi yang melihat pelaku.",
+          date: "23 NOV 1981",
+          xPercent: 28,
+          yPercent: 34,
+          rotation: -3,
+        },
+        {
+          id: "ev-id",
+          evidenceNumber: "EV-002",
+          title: "IDENTITAS NIHIL",
+          description:
+            "Meski wajah dan sidik jari masih ada, basis data biometrik belum tersedia pada 1981.",
+          date: "NOV 1981",
+          xPercent: 72,
+          yPercent: 66,
+          rotation: 3.5,
+        },
+      ],
+      connections: [
+        { from: "ev-box", to: "ev-id", label: "COLD TRAIL" },
+      ],
+      transition: "paperCut",
+    },
+    {
+      id: "mystery",
+      type: "mystery",
+      duration: sec(6),
+      chapterNumber: "07",
+      headline: "THE MYSTERY",
+      docNumber: "SB13-1981-COLD",
+      agency: "ARCHIVE DOSSIER // JAKARTA",
+      subtitle: "PELAKU & MOTIF TIDAK PERNAH TERUNGKAP",
+      body: "Hingga lebih dari empat dekade berselang, siapa korban sebenarnya serta identitas pelaku tidak pernah terpecahkan.",
+      redactedPhrases: ["identitas pelaku"],
+      annotations: [
+        "NOTE [1]: Keterbatasan database sidik jari & forensik DNA pada 1981.",
+        "NOTE [2]: Tercatat sebagai cold case legendaris di Indonesia.",
+      ],
+      stamp: "UNSOLVED",
+      transition: "filmBurn",
+      sfx: { category: "stamp_impact", offsetFrame: 30, volume: 0.55 },
+    },
+    {
+      id: "conclusion",
+      type: "conclusion",
+      duration: sec(6),
+      headline:
+        "Empat dekade berlalu, nama di balik kasus Setiabudi 13 masih belum terjawab.",
+    },
+  ],
+});

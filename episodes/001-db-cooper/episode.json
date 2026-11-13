@@ -1,0 +1,47 @@
+{
+  "id": "episode-001",
+  "title": "PRIA YANG MENGHILANG DI UDARA",
+  "subtitle": "The D. B. Cooper Mystery",
+  "category": "UNSOLVED MYSTERY",
+  "language": "id-ID",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetDurationSeconds": 80,
+  "status": "draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "opening",
+      "targetDurationSeconds": 8
+    },
+    {
+      "id": "context",
+      "type": "context",
+      "targetDurationSeconds": 14
+    },
+    {
+      "id": "incident",
+      "type": "incident",
+      "targetDurationSeconds": 23
+    },
+    {
+      "id": "evidence",
+      "type": "evidence",
+      "targetDurationSeconds": 15
+    },
+    {
+      "id": "mystery",
+      "type": "mystery",
+      "targetDurationSeconds": 12
+    },
+    {
+      "id": "closing",
+      "type": "closing",
+      "targetDurationSeconds": 8
+    }
+  ],
+  "assets": [],
+  "sources": [],
+  "editorialNote": "Draft structure only. Verify all claims and assets before publication."
+}
